@@ -1,0 +1,15 @@
+C:\GIT\C#\HW_3856\ДомЗад\obj\Debug\net6.0\ДомЗад.csproj.AssemblyReference.cache
+C:\GIT\C#\HW_3856\ДомЗад\obj\Debug\net6.0\ДомЗад.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT\C#\HW_3856\ДомЗад\obj\Debug\net6.0\ДомЗад.AssemblyInfoInputs.cache
+C:\GIT\C#\HW_3856\ДомЗад\obj\Debug\net6.0\ДомЗад.AssemblyInfo.cs
+C:\GIT\C#\HW_3856\ДомЗад\obj\Debug\net6.0\ДомЗад.csproj.CoreCompileInputs.cache
+C:\GIT\C#\HW_3856\ДомЗад\bin\Debug\net6.0\ДомЗад.exe
+C:\GIT\C#\HW_3856\ДомЗад\bin\Debug\net6.0\ДомЗад.deps.json
+C:\GIT\C#\HW_3856\ДомЗад\bin\Debug\net6.0\ДомЗад.runtimeconfig.json
+C:\GIT\C#\HW_3856\ДомЗад\bin\Debug\net6.0\ДомЗад.dll
+C:\GIT\C#\HW_3856\ДомЗад\bin\Debug\net6.0\ДомЗад.pdb
+C:\GIT\C#\HW_3856\ДомЗад\obj\Debug\net6.0\ДомЗад.dll
+C:\GIT\C#\HW_3856\ДомЗад\obj\Debug\net6.0\refint\ДомЗад.dll
+C:\GIT\C#\HW_3856\ДомЗад\obj\Debug\net6.0\ДомЗад.pdb
+C:\GIT\C#\HW_3856\ДомЗад\obj\Debug\net6.0\ДомЗад.genruntimeconfig.cache
+C:\GIT\C#\HW_3856\ДомЗад\obj\Debug\net6.0\ref\ДомЗад.dll

@@ -1,0 +1,15 @@
+C:\GIT\C#\HW_3856\Seminar1.3\bin\Debug\net6.0\Seminar1.3.exe
+C:\GIT\C#\HW_3856\Seminar1.3\bin\Debug\net6.0\Seminar1.3.deps.json
+C:\GIT\C#\HW_3856\Seminar1.3\bin\Debug\net6.0\Seminar1.3.runtimeconfig.json
+C:\GIT\C#\HW_3856\Seminar1.3\bin\Debug\net6.0\Seminar1.3.dll
+C:\GIT\C#\HW_3856\Seminar1.3\bin\Debug\net6.0\Seminar1.3.pdb
+C:\GIT\C#\HW_3856\Seminar1.3\obj\Debug\net6.0\Seminar1.3.csproj.AssemblyReference.cache
+C:\GIT\C#\HW_3856\Seminar1.3\obj\Debug\net6.0\Seminar1.3.GeneratedMSBuildEditorConfig.editorconfig
+C:\GIT\C#\HW_3856\Seminar1.3\obj\Debug\net6.0\Seminar1.3.AssemblyInfoInputs.cache
+C:\GIT\C#\HW_3856\Seminar1.3\obj\Debug\net6.0\Seminar1.3.AssemblyInfo.cs
+C:\GIT\C#\HW_3856\Seminar1.3\obj\Debug\net6.0\Seminar1.3.csproj.CoreCompileInputs.cache
+C:\GIT\C#\HW_3856\Seminar1.3\obj\Debug\net6.0\Seminar1.3.dll
+C:\GIT\C#\HW_3856\Seminar1.3\obj\Debug\net6.0\refint\Seminar1.3.dll
+C:\GIT\C#\HW_3856\Seminar1.3\obj\Debug\net6.0\Seminar1.3.pdb
+C:\GIT\C#\HW_3856\Seminar1.3\obj\Debug\net6.0\Seminar1.3.genruntimeconfig.cache
+C:\GIT\C#\HW_3856\Seminar1.3\obj\Debug\net6.0\ref\Seminar1.3.dll
