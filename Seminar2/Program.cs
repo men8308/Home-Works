@@ -34,24 +34,33 @@
 // Напишите программу, которая будет принимать на вход два числа и выводить, является ли второе число кратным превому
 // Если число 2 кратно 1, то выводим "кратно". Если не кратно то выводим остаток от деления.
 
+// System.Console.Clear();
+// System.Console.WriteLine("Enter number 1");//можно запросить оба числа поочередно в одном запросе
+// string strnumber1 = Console.ReadLine();
+// int number1 = Convert.ToInt32(strnumber1);
+// System.Console.WriteLine("Enter number 2");
+// string strnumber2 = Console.ReadLine();
+// int number2 = Convert.ToInt32(strnumber2);
+// int result = number1 % number2;
+// if  (result == 0)
+// {
+//     System.Console.WriteLine("Кратно");
+// }
+// else 
+// {
+//     System.Console.WriteLine($"Остаток от деления = {result}");
+// }
+
+
+
+// Написать программу, которая принимает на вход число и проверяет кратно ли оно одновременно 7 и 23
 System.Console.Clear();
-
-System.Console.WriteLine("Enter number 1");
-string strnumber1 = Console.ReadLine();
-int number1 = Convert.ToInt32(strnumber1);
-
-System.Console.WriteLine("Enter number 2");
-string strnumber2 = Console.ReadLine();
-int number2 = Convert.ToInt32(strnumber2);
-
-int result = number1 % number2;
-
-if  (result == 0)
-{
-    System.Console.WriteLine("Кратно");
+System.Console.Write("Enter number");
+string strnumber = Console.ReadLine();
+int number = Convert.ToInt32(strnumber);
+if ((number % 7 == 0) && (number % 23 == 0))
+{   System.Console.Write("Even");
 }
-
 else 
-{
-    System.Console.WriteLine($"Остаток от деления = {result}");
+{   System.Console.WriteLine("Not even");
 }
