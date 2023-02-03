@@ -54,13 +54,33 @@
 
 
 // Написать программу, которая принимает на вход число и проверяет кратно ли оно одновременно 7 и 23
+// System.Console.Clear();
+// System.Console.Write("Enter number");
+// string strnumber = Console.ReadLine();
+// int number = Convert.ToInt32(strnumber);
+// if ((number % 7 == 0) && (number % 23 == 0))
+// {   System.Console.Write("multiple");
+// }
+// else 
+// {   System.Console.WriteLine("non - multiple");
+// }
+
+
+// Напишите программу, которая навход принимает два числа и проверяет, является ли одно число квадратом другого.
 System.Console.Clear();
-System.Console.Write("Enter number");
-string strnumber = Console.ReadLine();
-int number = Convert.ToInt32(strnumber);
-if ((number % 7 == 0) && (number % 23 == 0))
-{   System.Console.Write("Even");
+System.Console.Write("Enter number1 ");
+string strnumber1 = Console.ReadLine();
+int number1 = Convert.ToInt32(strnumber1);
+System.Console.Write("Enter number2 ");
+string strnumber2 = Console.ReadLine();
+int number2 = Convert.ToInt32(strnumber2);
+
+if (number1*number1 == number2)
+{
+    System.Console.Write("Является");
 }
-else 
-{   System.Console.WriteLine("Not even");
+else if (number2*number2 == number1)
+{
+    System.Console.Write("Является");
 }
+else {System.Console.Write("Не является");}
