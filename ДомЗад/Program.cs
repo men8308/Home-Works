@@ -38,16 +38,11 @@
 // string strC = Console.ReadLine();
 // int C = Convert.ToInt32(strC);
 // int max = A;
-// if (B >= A)
-// {Console.WriteLine("max=NumB");}
-// else if (B >= C)
-// {Console.WriteLine("max =  NumB");}
-// else if (C >= A)
-// {Console.WriteLine("max =  NumC");}
-// else if (C >= B)
-// {Console.WriteLine("max =  NumC");}
-// else
-// {Console.WriteLine("max =  NumA");}
+// if (B >= max)
+// {max = B;}
+// if (C >= max)
+// {max = C;}
+// {Console.WriteLine($"max number =  {max}");}
 
 
 
@@ -76,19 +71,62 @@
 
 
 
-// Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+// задача 8. Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
 
 // 5 -> 2, 4
 // 8 -> 2, 4, 6, 8
 
-Console.Write("Enter number");
-string strNumb = Console.ReadLine();
-int Numb = Convert.ToInt32(strNumb);
+// Console.Write("Enter number");
+// string strNumb = Console.ReadLine();
+// int Numb = Convert.ToInt32(strNumb);
 
-int i = 0;
-if (i <= Numb)
-{
-    i += 2;
-    Console.WriteLine(i);
-}
-else {;}
+// int i = 0;
+// while (i<=Numb)
+// {if (i <= Numb)
+// {
+  
+//     Console.WriteLine($"{i}");
+// }
+//   i += 2;
+// }
+
+
+
+// Задача 10: напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
+// 456 -> 5
+// 782 -> 8
+// 918 -> 1
+// System.Console.Clear();
+// int number = new Random() .Next(99, 1000);//568
+// int number1 = ((number%100)/10);
+// System.Console.WriteLine($"Number = {number}");
+// System.Console.WriteLine($"{number1}");
+
+
+
+// Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
+// 645 -> 5
+// 78 -> третьей цифры нет
+// 32679 -> 6
+// System.Console.Clear();//Чистим экран терминала
+// System.Console.Write("Enter any number ");//вводим любое число
+// string strnumber1 = Console.ReadLine();//вводим переменную strnumber1 и считываем в неё введеные значения как строку
+// int number1 = Convert.ToInt32(strnumber1);//вводим переменную number1 и конвертируем в неё цифру из strnumber1
+// int result;//вводим переменную result
+// if (number1 < 100)//условие для двухзначных чисел
+// {    System.Console.WriteLine("No third digit");}
+// else if ((number1 <= 999) && (number1 >= 100))//условие для 3-хзначных чисел
+// {result = (number1%10);
+//     System.Console.WriteLine($"Third digit = {result}");}
+// else if ((number1<= 10000) && (number1 >= 1000))//условие для 4-хзначных чисел
+// {    result = number1%100/10;
+//    System.Console.WriteLine($"Third digit = {result}");}
+// else if ((number1<= 100000) && (number1 >= 10000))//условие для 5-тизначных чисел
+// {    result = number1%1000/100;
+//    System.Console.WriteLine($"Third digit = {result}");}
+// else if ((number1<= 1000000) && (number1 >= 100000))//условие для 6-тизначных чисел
+// {    result = number1%10000/1000;
+//    System.Console.WriteLine($"Third digit = {result}");}
+//    else if ((number1<= 10000000) && (number1 >= 1000000))//условие для 7-мизначных чисел
+// {    result = number1%100000/10000;
+//    System.Console.WriteLine($"Third digit = {result}");}
