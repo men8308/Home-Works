@@ -130,3 +130,44 @@
 //    else if ((number1<= 10000000) && (number1 >= 1000000))//условие для 7-мизначных чисел
 // {    result = number1%100000/10000;
 //    System.Console.WriteLine($"Third digit = {result}");}
+
+
+
+// Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, 
+// является ли этот день выходным.
+// 6 -> да
+// 7 -> да
+// 1 -> нет
+System.Console.Clear();//Чистим экран терминала
+System.Console.Write("enter a number from 1 to 7 ");//вводим число от 1 до 7
+string strnumber = Console.ReadLine();//вводим переменную strnumber1 и считываем в неё введеные значения как строку
+int number = Convert.ToInt32(strnumber);//вводим переменную number1 и конвертируем в неё цифру из strnumber1
+int result;//вводим переменную result
+if (number == 1)
+{
+    System.Console.Write("It's a Monday, a working day");
+}
+else if (number == 2)
+{
+    System.Console.Write("It's a Tuesday, a working day");
+}
+else if (number == 3)
+{
+    System.Console.Write("It's a Wednesday, a working day");
+}
+else if (number == 4)
+{
+    System.Console.Write("It's a Thursday, a working day");
+}
+else if (number == 5)
+{
+    System.Console.Write("It's a Friday, a working day");
+}
+else if (number == 6)
+{
+    System.Console.Write("It's a Saturday, a weekend");
+}
+else
+{
+    System.Console.Write("It's a Sanday, a weekend");
+}
