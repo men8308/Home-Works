@@ -39,9 +39,9 @@ else
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 
 
-Console.Clear();
+/*Console.Clear();
 
-int ReadInt(string message)
+int ReadInt(string message)// Функция ввода сообщения
 {
     Console.Write(message);
     return Convert.ToInt32(Console.ReadLine());
@@ -57,5 +57,30 @@ int A = x2 - x1;
 int B = y2 - y1;
 int C = z1 - z2;
 
-double length = Math.Sqrt(A * A + B * B + C * C);
-Console.WriteLine($"Длинна отрезка {length}");
+double length = Math.Sqrt(A * A + B * B + C * C); // Надо разобраться как результат округлить до сотых!!!
+Console.WriteLine($"Длинна отрезка {length}");*/
+
+
+
+
+
+// Задача 23
+// Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+// 3 -> 1, 8, 27
+// 5 -> 1, 8, 27, 64, 125
+
+int ReadInt(string message)// Функция ввода сообщения
+{
+    Console.Write(message);
+    return Convert.ToInt32(Console.ReadLine());
+}
+int number = ReadInt("Введите число N: ");
+
+for (int i = 1; i <= number; i++)
+{ 
+    Console.Write($"{i*i*i} ");
+}
+
+
+
+
