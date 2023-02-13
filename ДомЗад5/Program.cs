@@ -51,7 +51,7 @@ void PrintArray(int[] numbers)
 // Задача 36: Задайте одномерный массив, заполненный случайными числами.
 // Найдите сумму элементов, стоящих на нечётных позициях.
 
-
+/*
 Console.Write("Enter the size of the array : ");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] numbers = new int[size];
@@ -69,7 +69,7 @@ void Array(int[] numbers)
 {
     for(int i = 0; i < numbers.Length; i++)
         {
-            numbers[i] = new Random().Next(1,10);
+            numbers[i] = new Random().Next(-10,10);
         }
 }
 void PrintArray(int[] numbers)
@@ -81,4 +81,59 @@ void PrintArray(int[] numbers)
         }
     Console.Write("]");
     Console.WriteLine();
+}
+*/
+
+
+
+
+
+
+// Задача 38: Задайте массив вещественных чисел.
+// Найдите разницу между максимальным и минимальным элементов массива.
+
+Console.Write("Enter the size of the array : ");
+int size = Convert.ToInt32(Console.ReadLine());
+double[] numbers = new double[size];
+Array(numbers);
+Console.Write("This is our array : ");
+PrintArray(numbers);
+Console.WriteLine();
+double min = Int32.MaxValue;
+double max = Int32.MinValue;
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    if (numbers[i] > max)
+        {
+            max = numbers[i];
+        }
+    if (numbers[i] < min)
+        {
+            min = numbers[i];
+        }
+}
+
+Console.WriteLine($"Maximum value = {max}");
+
+Console.WriteLine($"Minimum value = {min}");
+
+Console.Write($"The difference between the maximum and minimum values of the array = {max - min}");
+
+void Array(double[] numbers)
+{
+    for(int i = 0; i < numbers.Length; i++)
+        {
+            numbers[i] = Convert.ToDouble(new Random().Next(-1000,1000)) / 100;
+        }
+}
+void PrintArray(double[] numbers)
+{
+    Console.Write("[ ");
+    for(int i = 0; i < numbers.Length; i++)
+        {
+            Console.Write(numbers[i] + " ");
+        }
+    Console.Write("]");
+    
 }
