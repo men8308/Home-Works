@@ -1,4 +1,4 @@
-﻿// Задача 47.Задайте двумерный массив размером m×n,
+﻿// Задача №47.Задайте двумерный массив размером m×n,
 // заполненный случайными вещественными числами.
 
 
@@ -44,7 +44,7 @@ Console.Clear();
 
 
 
-// Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, 
+// Задача №50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, 
 // и возвращает значение этого элемента или же указание, что такого элемента нет.
 // Во вводе первая цифра - номер строки, вторая - столбца.
 
@@ -91,18 +91,31 @@ Console.Clear();
 
 
 
-// Задача 52. Задайте двумерный массив из целых чисел.
+// Задача №52. Задайте двумерный массив из целых чисел.
 // Найдите среднее арифметическое элементов в каждом столбце.
 
-// int rows = ReadInt("Enter Rows: ");
-// int colums = ReadInt("Enter Columns: ");
+
+
+
+// int rows = 3;
+// int colums = 4;
 // int[,] numbers = new int[rows, colums];
 
 // FillArray2D(numbers);
 // PrintArray2D(numbers);
-// ReadInt(numbers);
 
-// // Заполнение массива рандомными числами от 1 до 9
+// double[] avgNumbers = new double[numbers.GetLength(1)];
+// for (int i = 0; i < numbers.GetLength(1); i++)
+// {
+//     double result1 = 0.0;
+//     for (int j = 0; j < numbers.GetLength(0); j++)
+//     {
+//         result1 += numbers[j, i];
+//     }
+//     avgNumbers[i] = Math.Round(result1 / numbers.GetLength(0), 2);
+// }
+// PrintArray(avgNumbers);
+// // Заполнение массива рандомными вещественными числами
 // void FillArray2D(int[,] array)
 // {
 //     for (int i = 0; i < array.GetLength(0); i++)
@@ -113,8 +126,7 @@ Console.Clear();
 //         }
 //     }
 // }
-
-// // Функция вывода массива в терминал
+// // Функция вывода двумерного массива в терминал
 // void PrintArray2D(int[,] array)
 // {
 //     for (int i = 0; i < array.GetLength(0); i++)
@@ -127,71 +139,62 @@ Console.Clear();
 //     }
 //     Console.WriteLine();
 // }
-
-// // Функция ввода
-// int ReadInt(string message)
+// // Функция вывода массива в терминал
+// void PrintArray(double[] array)
 // {
-//     Console.Write(message);
-//     return Convert.ToInt32(Console.ReadLine());
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + " ");
+//     }
+//     Console.WriteLine();
 // }
 
 
 
-int rows = 3;
+
+
+
+
+// Задача №62. Напишите программу, которая заполнит спирально массив 4 на 4.
+
+
+int rows =4;
 int colums = 4;
 int[,] numbers = new int[rows, colums];
 
-FillArray2D(numbers);
-PrintArray2D(numbers);
-
-double[] avgNumbers = new double[numbers.GetLength(1)];
-for (int i = 0; i < numbers.GetLength(1); i++)
-{
-    double result1 = 0.0;
-    for (int j = 0; j < numbers.GetLength(0); j++)
-    {
-        result1 += numbers[j, i];
-    }
-    avgNumbers[i] = Math.Round(result1 / numbers.GetLength(0), 2);
-}
-PrintArray(avgNumbers);
 // Заполнение массива рандомными вещественными числами
-void FillArray2D(int[,] array)
+
+int temp = 1;
+int i = 0;
+int j = 0;
+
+while (temp <= numbers.GetLength(0) * numbers.GetLength(1))
 {
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            array[i, j] = new Random().Next(1, 10);
-        }
-    }
+  numbers[i, j] = temp;
+  temp++;
+  if (i <= j + 1 && i + j < numbers.GetLength(1) - 1)
+    j++;
+  else if (i < j && i + j >= numbers.GetLength(0) - 1)
+    i++;
+  else if (i >= j && i + j > numbers.GetLength(1) - 1)
+    j--;
+  else
+    i--;
 }
-// Функция вывода двумерного массива в терминал
-void PrintArray2D(int[,] array)
+
+WriteArray(numbers);
+void WriteArray (int[,] array)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+  for (int i = 0; i < array.GetLength(0); i++)
+  {
+    for (int j = 0; j < array.GetLength(1); j++)
     {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            Console.Write(array[i, j] + " ");
-        }
-        Console.WriteLine();
+      if (array[i,j] / 10 <= 0)
+      Console.Write($" {array[i,j]} ");
+
+      else Console.Write($"{array[i,j]} ");
     }
     Console.WriteLine();
+  }
 }
-// Функция вывода массива в терминал
-void PrintArray(double[] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    {
-        Console.Write(array[i] + " ");
-    }
-    Console.WriteLine();
-}
-
-
-
-
-
-
-
+  
