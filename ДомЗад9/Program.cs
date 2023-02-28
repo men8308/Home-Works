@@ -10,12 +10,12 @@ Console.Write("Enter positive number : ");
 int number = int.Parse(Console.ReadLine());
 
 //Рекурсивный метод вывода всех натуральных чисел от number до 1:
-void NumberCounterReverse (int number)
+void NumberCounterReverse(int number)
 {
-    if (number < 0) Console.Write($"{number} не натуральное число");
-    if (number == 0) return;
-    Console.Write(number );
-    NumberCounterReverse (number - 1);
+    if (number < 1 || number == 0) return;
+    Console.Write(number);
+    NumberCounterReverse(number - 1);
 }
 
 NumberCounterReverse(number);
+
