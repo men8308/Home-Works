@@ -5,7 +5,7 @@
 
 Console.Clear();
 
-
+/*
 Console.Write("Enter positive number : ");
 int number = int.Parse(Console.ReadLine());
 
@@ -18,4 +18,53 @@ void NumberCounterReverse(int number)
 }
 
 NumberCounterReverse(number);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Задача 66: Задайте значения M и N.
+// Напишите программу, которая найдёт сумму натуральных элементов в промежутке от M до N.
+
+
+int m = InputNumbers("Enter natural number m: ");
+int n = InputNumbers("Enter natural number n: ");
+int temp = m;
+
+if (m > n) 
+{
+  m = n; 
+  n = temp;
+}
+
+NumberCounterSumReverse(m, n, temp=0);
+
+void NumberCounterSumReverse(int m, int n, int summ)
+{
+  summ = summ + n;
+  if (n <= m)
+  {
+    Console.Write($"our sum is from M to N = {summ}");
+    return;
+  }
+  NumberCounterSumReverse(m, n - 1, summ);
+}
+
+int InputNumbers(string input) 
+{
+  Console.Write(input);
+  int output = Convert.ToInt32(Console.ReadLine());
+  return output;
+}
 
